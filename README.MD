@@ -1,4 +1,5 @@
 一、项目结构
+
 *  django-ant-autoapi/
 *  ─ autoapi/
 *  ─ core/
@@ -7,10 +8,7 @@
 *  ─ README.md
 *  ─ LICENSE
 
-
 二、简介（Summary）
-
-简介（Summary）
 
 django-ant-autoapi 是一个基于 Django REST Framework (DRF) 的自动化 CRUD 与接口文档生成工具。
 零配置即可自动扫描 Django 模型并自动生成完整 REST API、Serializer、ViewSet、路由和 Swagger/Redoc 文档。
