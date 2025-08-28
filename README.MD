@@ -39,6 +39,7 @@ django-ant-autoapi 是一个基于 Django REST Framework (DRF) 的自动化 CRUD
 
 
 🚀 特性
+
 	•	⚡ 零配置：安装即可使用，用户只需要专注写 models。
 	•	🔄 自动扫描 `INSTALLED_APPS` 中所有启用App,并自动生成 DRF CRUD API 、序列化器和接口文档。
 	•	🔑 内置 JWT 认证与权限控制
