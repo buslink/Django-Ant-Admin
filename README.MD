@@ -1,11 +1,11 @@
 一、项目结构
-django-ant-autoapi/
-── autoapi/
+`django-ant-autoapi/`
+`── autoapi/
 ── core/
 ── pyproject.toml
 ── MANIFEST.in
 ── README.md
-── LICENSE
+── LICENSE`
 
 
 二、简介（Summary）
