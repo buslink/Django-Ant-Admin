@@ -44,7 +44,7 @@ django-ant-autoapi 是一个基于 Django REST Framework (DRF) 的自动化 CRUD
 
 三、快速使用
 
-1.下载完整项目并安装相关依赖
+1.下载完整项目并安装相关依赖,跳过第 2 步
 
     git clone https://github.com/buslink/Django-Ant-Admin
     cd Django-Ant-Admin
@@ -82,15 +82,14 @@ django-ant-autoapi 是一个基于 Django REST Framework (DRF) 的自动化 CRUD
     ]
 
 
-其他配置
-* 模型内部可定义 ApiMeta 来微调字段、搜索、排序、权限等（参考 autoapi/models.py 示例）。
-* 默认敏感字段通过autoapi/dynamic.py SENSITIVE_FIELDS 自动隐藏。
-
 
 3.初始化后端
 
-<!-- 自定义 model后，生成库表 -->
-<!-- autoapi.models.Profile model权限调整示例 -->
+其他配置
+* 模型内部可定义 ApiMeta 来微调字段、搜索、排序、权限等（参考 autoapi/models.py 示例）。
+* 默认敏感字段通过autoapi/dynamic.py SENSITIVE_FIELDS 自动隐藏。
+* 自定义 model后，生成库表
+* autoapi.models.Profile model权限调整示例
 
     python manage.py makemigrations
     python manage.py migrate
@@ -100,7 +99,7 @@ django-ant-autoapi 是一个基于 Django REST Framework (DRF) 的自动化 CRUD
     http://127.0.0.1:8000/admin         # django自带管理后台
     http://127.0.0.1:8000/api/token/    # 获取 JWT token
     http://127.0.0.1:8000/api/docs/     # Swagger UI 接口文档
-    http://127.0.0.1:8000/api/redoc/    # Redoc 接口文档
+    http://127.0.0.1:8000/api/redoc/    # Redoc 接口文档`
 
 
 4.初始化前端
