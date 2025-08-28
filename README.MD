@@ -56,40 +56,42 @@ django-ant-autoapi 是一个基于 Django REST Framework (DRF) 的自动化 CRUD
 =========================================================================
 
 三、快速使用
+
 1.下载完整项目并安装相关依赖
-git clone https://github.com/buslink/Django-Ant-Admin
-cd Django-Ant-Admin
-pip install -r requirements.txt
+
+    git clone https://github.com/buslink/Django-Ant-Admin
+    cd Django-Ant-Admin
+    pip install -r requirements.txt
 
 2.已有Django 项目中使用
 
-pip install django-ant-autoapi
+    pip install django-ant-autoapi
 
-# (安装requirements.txt)
-pip install Django djangorestframework djangorestframework-simplejwt drf-spectacular django-cors-headers django_filters
+    # (安装requirements.txt)
+    pip install Django djangorestframework djangorestframework-simplejwt drf-spectacular django-cors-headers django_filters
 
 在 settings.py 中添加：
 
-INSTALLED_APPS = [
-    # 业务 app
-    'autoapi',
-
-    #第三方模块
-    'rest_framework',
-    'drf_spectacular',
-    'drf_spectacular_sidecar',
-    'corsheaders',
-    'django_filters',
-]
+    INSTALLED_APPS = [
+        # 业务 app
+        'autoapi',
+    
+        #第三方模块
+        'rest_framework',
+        'drf_spectacular',
+        'drf_spectacular_sidecar',
+        'corsheaders',
+        'django_filters',
+    ]
 
 
 在 urls.py 中添加：
 
-urlpatterns = [
-    ...
-    # + api路由入口
-    path('api/', include('autoapi.urls')),
-]
+    urlpatterns = [
+        ...
+        # + api路由入口
+        path('api/', include('autoapi.urls')),
+    ]
 
 
 其他配置
@@ -102,15 +104,15 @@ urlpatterns = [
 <!-- 自定义 model后，生成库表 -->
 <!-- autoapi.models.Profile model权限调整示例 -->
 
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser    # 创建管理员
-python manage.py runserver
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py createsuperuser    # 创建管理员
+    python manage.py runserver
 
-http://127.0.0.1:8000/admin         # django自带管理后台
-http://127.0.0.1:8000/api/token/    # 获取 JWT token
-http://127.0.0.1:8000/api/docs/     # Swagger UI 接口文档
-http://127.0.0.1:8000/api/redoc/    # Redoc 接口文档
+    http://127.0.0.1:8000/admin         # django自带管理后台
+    http://127.0.0.1:8000/api/token/    # 获取 JWT token
+    http://127.0.0.1:8000/api/docs/     # Swagger UI 接口文档
+    http://127.0.0.1:8000/api/redoc/    # Redoc 接口文档
 
 
 4.初始化前端
