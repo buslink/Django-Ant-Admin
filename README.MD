@@ -81,8 +81,6 @@ django-ant-autoapi 是一个基于 Django REST Framework (DRF) 的自动化 CRUD
         path('api/', include('autoapi.urls')),
     ]
 
-
-
 3.初始化后端
 
 其他配置
@@ -91,16 +89,16 @@ django-ant-autoapi 是一个基于 Django REST Framework (DRF) 的自动化 CRUD
 * 自定义 model后，生成库表
 * autoapi.models.Profile model权限调整示例
 
+
     python manage.py makemigrations
     python manage.py migrate
-    python manage.py createsuperuser    # 创建管理员
+    python manage.py createsuperuser
     python manage.py runserver
 
     http://127.0.0.1:8000/admin         # django自带管理后台
     http://127.0.0.1:8000/api/token/    # 获取 JWT token
     http://127.0.0.1:8000/api/docs/     # Swagger UI 接口文档
-    http://127.0.0.1:8000/api/redoc/    # Redoc 接口文档`
-
+    http://127.0.0.1:8000/api/redoc/    # Redoc 接口文档
 
 4.初始化前端
 安装 node.js，直接调用 /api/v1/<ModelName>/ 的接口即可，无需额外配置。
