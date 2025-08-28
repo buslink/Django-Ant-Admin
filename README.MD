@@ -73,10 +73,11 @@ django-ant-autoapi 是一个基于 Django REST Framework (DRF) 的自动化 CRUD
 在 settings.py 中添加：
 
     INSTALLED_APPS = [
-        # 业务 app
+        ...
+        # + autoapi
         'autoapi',
     
-        #第三方模块
+        # +第三方依赖
         'rest_framework',
         'drf_spectacular',
         'drf_spectacular_sidecar',
@@ -95,8 +96,8 @@ django-ant-autoapi 是一个基于 Django REST Framework (DRF) 的自动化 CRUD
 
 
 其他配置
-	•模型内部可定义 ApiMeta 来微调字段、搜索、排序、权限等（参考 autoapi/models.py 示例）。
-	•默认敏感字段通过autoapi/dynamic.py SENSITIVE_FIELDS 自动隐藏。
+* 模型内部可定义 ApiMeta 来微调字段、搜索、排序、权限等（参考 autoapi/models.py 示例）。
+* 默认敏感字段通过autoapi/dynamic.py SENSITIVE_FIELDS 自动隐藏。
 
 
 3.初始化后端
