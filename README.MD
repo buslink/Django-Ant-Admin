@@ -89,6 +89,7 @@ django-ant-autoapi 是一个基于 Django REST Framework (DRF) 的自动化 CRUD
 * 自定义 model后，生成库表
 * autoapi.models.Profile model权限调整示例
 
+生成数据库表及运行
 
     python manage.py makemigrations
     python manage.py migrate
