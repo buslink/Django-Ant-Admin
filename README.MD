@@ -1,22 +1,11 @@
 一、项目结构
 django-ant-autoapi/
-├── autoapi/
-│   ├── __init__.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── views.py
-│   ├── pagination.py
-│   ├── permissions.py
-│   ├── dynamic.py
-│   ├── admin.py
-│   ├── urls.py
-│   ├── router.py
-│   └── migrations/
-├── setup.py
-├── pyproject.toml
-├── MANIFEST.in
-├── README.md
-└── LICENSE
+── autoapi/
+── core/
+── pyproject.toml
+── MANIFEST.in
+── README.md
+── LICENSE
 
 
 二、简介（Summary）
